@@ -1,4 +1,5 @@
 [[index|Main]]
+[[bash|Back]]
 
 sudo pacman -S rsync
 

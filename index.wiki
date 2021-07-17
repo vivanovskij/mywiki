@@ -19,11 +19,6 @@
 * Python:
     * [[pyinstaller]]
  
-* Terminal commands:
-    * [[ssh]]
-    * [[rsync]]
-    * [[rename_files|rename files]]
-
 * Text editors:
     * [[vim]]
     * [[emacs]]
