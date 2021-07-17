@@ -1,0 +1,8 @@
+[[index|Main]]
+[[vim|Back]]
+
+:browse oldfiles        Открыть список ранее ред. файлов
+
+:set formatoptions-=cr  Отключить автоматическое добавление комментария 
+                        (см.:h fo-table)
+
