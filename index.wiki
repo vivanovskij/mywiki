@@ -31,6 +31,7 @@
 * Other:
     * [[automount_disks|automount disks]]
     * [[i3]]
+    * [[keyboard]]
     * [[pacman]]
     * [[urxvt]]
  
@@ -44,3 +45,4 @@
 == Self ==
 * [[diary/diary|diary]]
 * [[diary/plans|plans]]
+* [[diary/passwords|My passwords]]
