@@ -1,0 +1,6 @@
+[[index|Main]]
+
+Для корректной работы с USB в arch linux:
+sudo pacman -S usbutils
+
+После этого нужна перезагрузка

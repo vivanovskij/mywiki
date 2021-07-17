@@ -1,0 +1,5 @@
+[[index|Main]]
+[[vim|Back]]
+
+* [[vim_pluggins_install|Установка плагинов]]
+

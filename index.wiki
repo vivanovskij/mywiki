@@ -1,0 +1,46 @@
+= Notes =
+
+[[TODO]]
+
+[[scratch]]
+
+ == Manuals ==
+ 
+* [[bash]]
+
+* Git:
+    * [[git]]
+    * [[github]]
+
+* File managers:
+    * [[vifm]]
+    * [[ranger]]
+
+* Python:
+    * [[pyinstaller]]
+ 
+* Terminal commands:
+    * [[ssh]]
+    * [[rsync]]
+    * [[rename_files|rename files]]
+
+* Text editors:
+    * [[vim]]
+    * [[emacs]]
+
+* Other:
+    * [[automount_disks|automount disks]]
+    * [[i3]]
+    * [[pacman]]
+    * [[urxvt]]
+ 
+ == Installations ==
+* [[arch_linux_installation|Arch Linux]]
+* [[usb]]
+
+== Other ==
+* [[konjak]]
+
+== Self ==
+* [[diary/diary|diary]]
+* [[diary/plans|plans]]

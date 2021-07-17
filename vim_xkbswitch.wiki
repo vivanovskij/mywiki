@@ -1,0 +1,15 @@
+[[index|Main]]
+[[vim|Back]]
+
+Для корректной работы кириллицы нужно установить библиотеку xkb-switch
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt update
+sudo apt install xkb-switch
+
+Библиотека xkbswitchlib.so устанавливается в директорию: /usr/lib
+
+В .bashrc дописать
+" Определение русской раскладки
+set keymap=russian-jcukenwin
+" При запуске vim использовать en раскладку
+set iminsert=0
