@@ -88,3 +88,8 @@ $ xprop
 Хороший шрифт (по умолчанию в emacs) Source code pro
 
 ==========================================================
+
+Minimal browsers:
+qutebrowser
+vimb
+min
