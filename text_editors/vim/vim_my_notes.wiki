@@ -1,0 +1,15 @@
+[[../../index|Main]]
+[[vim|Back]]
+
+
+Файл настройки: ~/.vimrc
+Можно редактировать файлы через сеть, например
+:e <scp|ftp|ftps>://user@host/path/to/the/file.txt
+:Ex или :e ./ - файловый менеджер
+
+
+:browse oldfiles        Открыть список ранее ред. файлов
+
+:set formatoptions-=cro Отключить автоматическое добавление комментария 
+                        (см.:h fo-table)
+

@@ -1,8 +1,0 @@
-[[index|Main]]
-
-== Содержание ==
-
-* [[bash_notes|notes]]
-* [[rename_files]]
-* [[rsync]]
-* [[ssh]]

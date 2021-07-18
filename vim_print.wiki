@@ -1,8 +1,0 @@
-[[index|Main]]
-[[vim|Back]]
-
-
-        == Печать ==
-
-:ha[rdcopy]                   распечатать документ
-:set printoptions=duplex:off  отключить двустороннюю печать

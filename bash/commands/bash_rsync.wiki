@@ -1,0 +1,14 @@
+[[../../index|Main]]
+[[../bash|Back]]
+
+sudo pacman -S rsync
+
+---------------------------
+
+$ rsync [параметры] {source} {destination}
+
+$ rsync -av dir1 dir2   копирует dir1 в dir2  
+$ rsync -av dir1/ dir2  копирует содержимое dir1 в dir2  
+                        ключи:
+                        -a  копировать атрибуты
+                        -v  подробный вывод

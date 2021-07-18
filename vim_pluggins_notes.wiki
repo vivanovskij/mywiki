@@ -1,4 +1,0 @@
-[[index|Main]]
-[[vim_pluggins|Back]]
-
-
