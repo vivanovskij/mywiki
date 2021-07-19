@@ -1,8 +1,0 @@
-[[../../index|Main]]
-[[../bash|Back]]
-
-
-Фильтр wc - (word count) используется для подсчета числа строк, слов и байтов в файлах.
-wc ls-output.txt
-ls /bin /usr/bin | sort | uniq | wc -l 
-(ключ -l выводит только число строк)

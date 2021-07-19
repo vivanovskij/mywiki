@@ -1,17 +1,16 @@
 = My wiki =
-[[wiki_help|Help]]
-[[text_editors/vim/vimwiki|Wiki hotkeys]]
+[[wiki_help/wiki_help|Help]]
+[[wiki_help/wiki_hotkeys|Wiki hotkeys]]
 
 [[TODO]]
 [[scratch]]
 
  == Manuals ==
- 
-* [[bash/bash|bash]]
+* [[bash/bash_manual]]
 
 * Programming:
-    * [[programming/howto_it_project_start|С чего начинать IT проект]]
-    * [[programming/tz|Техническое задание]]
+    * [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
+    * [[programming/howto_it_project_start#Техническое задание|Техническое задание]]
     * Python:
         * [[pyinstaller]]
  
