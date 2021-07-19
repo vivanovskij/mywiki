@@ -4,5 +4,4 @@
 [[vim_pluggins_notes|notes]]
 
 * [[vim_pluggins_install|Установка плагинов]]
-* [[vimwiki]]
 * [[vim_xkbswitch|xkb-switch]]

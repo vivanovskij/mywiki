@@ -1,5 +1,4 @@
-[[../../index|Main]]
-[[vim_pluggins|Back]]
+[[/index|Main]]
 
 Для корректной работы кириллицы нужно установить библиотеку xkb-switch
 sudo add-apt-repository ppa:atareao/atareao
