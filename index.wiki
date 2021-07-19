@@ -8,16 +8,20 @@
  
 * [[bash/bash|bash]]
 
+* Programming:
+    * [[programming/howto_it_project_start|С чего начинать IT проект]]
+    * [[programming/tz|Техническое задание]]
+    * Python:
+        * [[pyinstaller]]
+ 
 * Git:
     * [[git]]
-    * [[github]]
+    * [[[[github]]]]
 
 * File managers:
     * [[vifm]]
     * [[ranger]]
 
-* Python:
-    * [[pyinstaller]]
  
 * Text editors:
     * [[text_editors/vim/vim|vim]]
