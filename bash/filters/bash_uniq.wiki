@@ -1,0 +1,6 @@
+[[../../index|Main]]
+[[../bash|Back]]
+
+
+Фильтр uniq - поиск и удаление повторяющихся строк
+ls /bin /usr/bin | sort | uniq | less

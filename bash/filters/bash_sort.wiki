@@ -1,0 +1,6 @@
+[[../../index|Main]]
+[[../bash|Back]]
+
+
+Фильтр sort сортирует вывод по алфавиту
+ls /bin /usr/bin | sort | less
