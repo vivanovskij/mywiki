@@ -1,5 +1,4 @@
 [[/index|Main]]
-[[vim_pluggins|Back]]
 
                 == Edit pages ==
 
@@ -21,12 +20,6 @@
                 == Lists ==
 
 В режиме вставки:
-
-<S-CR>                  Does not insert a new list item, useful to create
-                        multilined list items. See |vimwiki-lists| for
-                        details and for how to configure the behavior. The
-                        default map may not work in all terminals and may
-                        need to be remapped.
 
                                                              *vimwiki_i_<C-T>*
 <C-T>                   Increase the level of a list item.

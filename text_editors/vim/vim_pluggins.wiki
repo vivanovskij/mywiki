@@ -1,4 +1,4 @@
-[[../../index|Main]]
+[[/index|Main]]
 [[vim|Back]]
 
 [[vim_pluggins_notes|notes]]

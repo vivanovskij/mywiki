@@ -1,7 +1,8 @@
-= Notes =
+= My wiki =
+[[wiki_help|Help]]
+[[text_editors/vim/vimwiki|Wiki hotkeys]]
 
 [[TODO]]
-
 [[scratch]]
 
  == Manuals ==
@@ -16,7 +17,7 @@
  
 * Git:
     * [[git]]
-    * [[[[github]]]]
+    * [[github]]
 
 * File managers:
     * [[vifm]]
@@ -45,3 +46,4 @@
 * [[diary/diary|diary]]
 * [[diary/plans|plans]]
 * [[diary/passwords|My passwords]]
+
