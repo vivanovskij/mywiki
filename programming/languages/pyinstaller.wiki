@@ -1,4 +1,4 @@
-[[index|Main]]
+[[/index|Main]]
 
 # Сборка приложения 
 pyinstaller mynotepad.py

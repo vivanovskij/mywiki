@@ -1,6 +1,6 @@
 = My wiki =
-[[wiki_help|Help]]
-[[wiki_help#Hotkeys|Wiki hotkeys]]
+[[wiki_help|Wiki help]]
+[[wiki_help/wiki_hotkeys|Wiki hotkeys]]
 
 [[TODO]]
 [[scratch]]
@@ -10,11 +10,12 @@
 
 * Programming:
     * [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
-    * Python:
-        * [[pyinstaller]]
+    * [[programming/languages/python|Python]]:
+        * [[programming/languages/pyinstaller|pyinstaller]]
  
-* Git:
-    * [[git]]
+* [[git/git|Git]]:
+    * [[git/git#Git|git]]
+    * [[git/git#Github|github]]
     * [[github]]
 
 * File managers:
