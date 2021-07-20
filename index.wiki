@@ -1,18 +1,7 @@
-= Contents =
-    - [[#My wiki|My wiki]]
-        - [[#My wiki#Manuals|Manuals]]
-            - [[#My wiki#Manuals#Programming|Programming]]
-            - [[#My wiki#Manuals#Git|Git]]
-            - [[#My wiki#Manuals#File managers|File managers]]
-            - [[#My wiki#Manuals#Text editors|Text editors]]
-            - [[#My wiki#Manuals#Other|Other]]
-        - [[#My wiki#Installations|Installations]]
-        - [[#My wiki#Notes|Notes]]
-        - [[#My wiki#Self|Self]]
-
 = My wiki =
 [[wiki_help|Wiki help]]
 [[wiki_help/wiki_hotkeys|Wiki hotkeys]]
+[[scratch#my-macroses|Мои макросы]]
 
 [[TODO]]
 [[scratch]]
@@ -53,6 +42,5 @@
 
 == Self ==
 * [[diary/diary|diary]]
-* [[diary/plans|plans]]
+* [[diary/ideas/ideas|Идеи]]
 * [[diary/passwords|My passwords]]
-
