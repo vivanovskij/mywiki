@@ -13,16 +13,14 @@
     * [[programming/languages/python|Python]]:
         * [[programming/languages/pyinstaller|pyinstaller]]
  
-* [[git/git|Git]]:
+* Git:
     * [[git/git#Git|git]]
     * [[git/git#Github|github]]
-    * [[github]]
 
 * File managers:
-    * [[vifm]]
-    * [[ranger]]
+    * [[file_managers/vifm|vifm]]
+    * [[file_managers/ranger|ranger]]
 
- 
 * Text editors:
     * [[text_editors/vim/vim|vim]]
     * [[emacs]]
@@ -39,7 +37,7 @@
 * [[usb]]
 
 == Other ==
-* [[konjak]]
+* [[etc/konjak]]
 
 == Self ==
 * [[diary/diary|diary]]
