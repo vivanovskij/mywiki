@@ -1,5 +1,10 @@
 [[index|Back]]
 
+* Мои макросы vim:
+    * @c - копировать буфер, затем закрыть его
+    * @l - 
+
+
 * Полезные ссылки:
 Репозиторий для i3 https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer
 

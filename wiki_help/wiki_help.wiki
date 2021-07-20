@@ -1,7 +1,0 @@
-= Справка =
-* [[/wiki_help/wiki_lists|Lists ]]
-* [[/wiki_help/wiki_tables|Tables]]
-* [[/wiki_help/wiki_diary|Diary]]
-* [[/wiki_help/wiki_anchors|Anchors]]
-
-Полный список справки :h vimwiki
