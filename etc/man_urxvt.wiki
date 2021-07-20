@@ -1,4 +1,4 @@
-[[index|Main]]
+[[/index|Main]]
 [[urxvt|Back]]
 
 urxvt(1)                                                RXVT-UNICODE                                               urxvt(1)

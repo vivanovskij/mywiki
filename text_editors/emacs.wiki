@@ -1,4 +1,5 @@
-[[index|Main]]
+[[/index|Main]]
+
 
 C-h t   Туториал
 C-h C-h Список справки

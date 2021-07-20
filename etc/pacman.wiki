@@ -1,4 +1,6 @@
-[[index|Main]]
+[[/index|Main]]
+
+= pacman =
 
 Основные опции менеджера пакетов pacman:
 

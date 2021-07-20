@@ -1,5 +1,6 @@
 [[/index|Main]]
 
+= pyinstaller =
 # Сборка приложения 
 pyinstaller mynotepad.py
 

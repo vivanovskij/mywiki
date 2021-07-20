@@ -1,5 +1,6 @@
-[[index|Main]]
+[[/index|Main]]
 
+= Automount disks =
 1. Узнаем идентификаторы подключенных разделов:
 sudo blkid
 

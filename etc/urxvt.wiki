@@ -1,5 +1,6 @@
-[[index|Main]]
+[[/index|Main]]
 
+= urxvt =
 Чтобы отключить жиртый шрифт, нужно применить одну и ту же строку шрифта для
 обычных и полужирных шрифтов urxvt в
 ~/.Xresources, например:
@@ -9,7 +10,8 @@ URxvt.boldFont:xft:monaco:size=12
 Или прописать URxvt.boldFont: без параметров
 URxvt.boldFont:
 
------------------------------------------
+----------------------------------------------------------------------
+
 Установить изображение на background:
 URxvt.background-expr: scale keep { load "/path/to/mybg.png" }
 

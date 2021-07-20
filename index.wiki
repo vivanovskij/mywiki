@@ -1,3 +1,15 @@
+= Contents =
+    - [[#My wiki|My wiki]]
+        - [[#My wiki#Manuals|Manuals]]
+            - [[#My wiki#Manuals#Programming|Programming]]
+            - [[#My wiki#Manuals#Git|Git]]
+            - [[#My wiki#Manuals#File managers|File managers]]
+            - [[#My wiki#Manuals#Text editors|Text editors]]
+            - [[#My wiki#Manuals#Other|Other]]
+        - [[#My wiki#Installations|Installations]]
+        - [[#My wiki#Notes|Notes]]
+        - [[#My wiki#Self|Self]]
+
 = My wiki =
 [[wiki_help|Wiki help]]
 [[wiki_help/wiki_hotkeys|Wiki hotkeys]]
@@ -8,36 +20,36 @@
  == Manuals ==
 * [[bash/bash_manual]]
 
-* Programming:
-    * [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
-    * [[programming/languages/python|Python]]:
-        * [[programming/languages/pyinstaller|pyinstaller]]
- 
-* Git:
-    * [[git/git#Git|git]]
-    * [[git/git#Github|github]]
+=== Programming ===
+* [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
+* [[programming/python/python|Python]]:
+    * [[programming/python/pyinstaller|pyinstaller]]
 
-* File managers:
-    * [[file_managers/vifm|vifm]]
-    * [[file_managers/ranger|ranger]]
+=== Git ===
+* [[git/git#Git|git]]
+* [[git/git#Github|github]]
 
-* Text editors:
-    * [[text_editors/vim/vim|vim]]
-    * [[emacs]]
+=== File managers ===
+* [[file_managers/vifm|vifm]]
+* [[file_managers/ranger|ranger]]
 
-* Other:
-    * [[automount_disks|automount disks]]
-    * [[i3]]
-    * [[keyboard]]
-    * [[pacman]]
-    * [[urxvt]]
+=== Text editors ===
+* [[text_editors/vim/vim|vim]]
+* [[text_editors/emacs|emacs]]
+
+=== Other ===
+* [[etc/automount_disks|automount disks]]
+* [[etc/i3|i3]]
+* [[etc/keyboard|keyboard]]
+* [[etc/pacman|pacman]]
+* [[etc/urxvt|urxvt]]
  
  == Installations ==
-* [[arch_linux_installation|Arch Linux]]
-* [[usb]]
+* [[installations/arch_linux_installation|Arch Linux]]
+* [[installations/usb|usb]]
 
-== Other ==
-* [[etc/konjak]]
+== Notes ==
+* [[notes/konjak|Настойка коньяка]]
 
 == Self ==
 * [[diary/diary|diary]]
