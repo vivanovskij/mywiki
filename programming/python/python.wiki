@@ -1,4 +1,7 @@
 [[/index|Main]]
+[[/index#help|Help]]
+
 
 = Python =
+* [[12_onelines_in_python|12 мощных однострочников Python]]
 * [[pyinstaller]]

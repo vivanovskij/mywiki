@@ -1,0 +1,64 @@
+= 12 красивых однострочных конструкций на Python =
+
+(Видео с ютуб: https://www.youtube.com/watch?v=LkHCy5JZtsA )
+
+
+== Распаковка ==
+Задача: 
+   Принять данные размера комнаты и перемножить их между собой.
+
+1. Решение в лоб (getvolume.py):
+
+    sizes = input() 
+    sizes = sizes.strip()   # убираем пробелы по краям строки
+    sizes = sizes.split()   # разбиваем строку по пробельным символам
+    x = sizes[0]
+    y = sizes[1]
+    z = sizes[2]
+
+2. Сокращаем запись с помощью распаковки (getvolume.py):
+    sizes = input()
+    x, y, z = input().strip().split()
+    print(f"{x=}, {y=}, {z=}") # синтаксис python3.9
+    
+    $ python3.9 getvolume.py <<< "10 20 30"
+
+3.  Преобразуем x, y, z в int:
+3.1
+    x, y, z = input().strip().split()
+    x = int(x)
+    y = int(y)
+    z = int(z)
+    volume = x * y * z
+    print(f"{volume=}")
+
+3.2 
+    x, y, z = input().strip().split()
+    x, y, z = map(int, (x, y ,z))
+    volume = x * y * z
+    print(f"{volume=}")
+    
+    === map ===
+    Функция map принимает на вход 2 аргумента:
+    1. функция, кот. будет применена к последовательности во 2-м арг.
+    2. последовательность
+
+3.3
+    x, y, z = map(int, input().strip().split())
+    volume = x * y * z
+    print(f"{volume=}")
+
+3.4
+    === reduce ===
+    Позволяет из последовательности определённым образом собрать одно
+    значение.
+    reduce принимает 2 аргумента:
+    - функция, кот. будет применена к двум элементам последовательности;
+    - последовательность.
+ 
+    from functools import reduce
+    volume = reduce(
+        lambda x, y: x * y,
+        map(int, input().strip().split())
+        )
+    print(f"{volume=}")

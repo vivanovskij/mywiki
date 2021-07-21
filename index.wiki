@@ -1,7 +1,10 @@
 = My wiki =
-[[wiki_help|Wiki help]]
-[[wiki_help/wiki_hotkeys|Wiki hotkeys]]
-[[scratch#my-macroses|Мои макросы]]
+
+Help:
+:help:
+    [[wiki_help|Wiki help]]
+    [[wiki_help/wiki_hotkeys|Wiki hotkeys]]
+    [[scratch#my-macroses|Мои макросы]]
 
 [[TODO]]
 [[scratch]]
