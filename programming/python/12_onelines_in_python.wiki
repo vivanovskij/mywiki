@@ -1,4 +1,22 @@
-= 12 красивых однострочных конструкций на Python =
+= Contents =
+    - [[#12 однострочных конструкций на Python|12 однострочных конструкций на Python]]
+        - [[#12 однострочных конструкций на Python#Распаковка|Распаковка]]
+            - [[#12 однострочных конструкций на Python#Распаковка#map|map]]
+            - [[#12 однострочных конструкций на Python#Распаковка#reduce|reduce]]
+        - [[#12 однострочных конструкций на Python#Comprehensions вместо цикла|Comprehensions вместо цикла]]
+            - [[#12 однострочных конструкций на Python#Comprehensions вместо цикла#filter|filter]]
+        - [[#12 однострочных конструкций на Python#Копирование списков|Копирование списков]]
+        - [[#12 однострочных конструкций на Python#Список в обратном порядке|Список в обратном порядке]]
+        - [[#12 однострочных конструкций на Python#Проверка на разные условия|Проверка на разные условия]]
+        - [[#12 однострочных конструкций на Python#Проверка значений|Проверка значений]]
+            - [[#12 однострочных конструкций на Python#Проверка значений#Функция all|Функция all]]
+            - [[#12 однострочных конструкций на Python#Проверка значений#Функция any|Функция any]]
+        - [[#12 однострочных конструкций на Python#Тернарный оператор|Тернарный оператор]]
+        - [[#12 однострочных конструкций на Python#Функции с одинаковой сигнатурой|Функции с одинаковой сигнатурой]]
+
+----------------------------------------------------------------------
+
+= 12 однострочных конструкций на Python =
 
 (Видео с ютуб: https://www.youtube.com/watch?v=LkHCy5JZtsA )
 
@@ -62,3 +80,126 @@
         map(int, input().strip().split())
         )
     print(f"{volume=}")
+
+
+== Comprehensions вместо цикла ==
+Comprehensions можно перевести как "включение".
+Задача:
+    Из списка имён выбрать начинающиеся с буквы "А"
+
+1. Решение в лоб:
+names = ["Христофор", "Адемар", "Тэя", "Стефания", "Архип"]
+names_starts_a = []
+for name in names:
+    if name.startswith("А"):
+        names_starts_a.append(name)
+print(names_starts_a)
+
+2. 
+names = ["Христофор", "Адемар", "Тэя", "Стефания", "Архип"]
+names_starts_a = [name for name in names if name.startswith("А")]
+print(names_starts_a)
+
+3.
+    === filter ===
+    Принимает 2 аргумента:
+    - функция, фильтрующая;
+    - данные.
+    Функция возвращает итератор, кот. можно преобразовать в list, tuple
+names = ["Христофор", "Адемар", "Тэя", "Стефания", "Архип"]
+names_starts_a = filter(lambda names: names.startswith("А"))
+print(names_starts_a)
+
+
+== Копирование списков ==
+Задача:
+    Скопировать список
+    
+1.
+    numbers = [1, 2, 3]
+    another_numbers = numbers
+
+    Такой подход не копирует список, а создает ссылку, поэтому при
+    изменении одного списка изменится и другой.
+
+2.
+    Чтобы скопировать список:
+    
+    another_numbers = numbers[:]
+    
+
+== Список в обратном порядке ==
+    numbers = [1, 2, 3]
+    reverse_number = numbers[::-1]
+
+
+== Проверка на разные условия ==
+Задача:
+    Проверить имя "Василий" на соответствие из списка имён
+
+1.
+Решение в лоб:
+
+name = "Василий"
+if name == "Алексей" or name == "Петр" or name == "Федор":
+    print(name)
+
+2.
+if name in ("Алексей", "Петр", "Федор"):
+    print(name)
+
+
+== Проверка значений ==
+Задача:
+    Проверить все значение на True, иначе выбросить exception
+
+1.
+Решение в лоб:
+a = b = c = d = e = None
+a = b = c = d = e = True
+if a and b and c and d and e:
+    print ("All True")
+
+2.
+=== Функция all ===
+all возвращает True только в том случае, если истинны все элементы
+
+a = b = c = d = e = True
+if all((a, b, c, d, e)):
+    print ("All True")
+
+
+=== Функция any ===
+any возвращает True, если хотя бы один элемент True
+if any((a, b, c, d, e)):
+    print ("There is True element")
+
+
+== Тернарный оператор ==
+admin_email = "admin@site.ru" if config.IS_PRODUCTION else "mymail@email.com"
+
+
+== Функции с одинаковой сигнатурой ==
+
+1.Задача
+class User:
+    def __init__(self, group: str):
+        self.group = group
+
+user = User(group="admin") 
+
+if user.group == "admin":
+    process_admin_request(user, request)
+elif user.group == "manager":
+    process_manager_request(user, request)
+elif user.group == "client":
+    process_client_request(user, request)
+    
+
+2.Решение
+group_to_process_method = {
+    "admin": process_admin_request,
+    "manager": process_manager_request,
+    "client": process_client_request,
+}
+group_to_process_method[user.group](user.request)
