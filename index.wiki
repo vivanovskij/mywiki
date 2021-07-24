@@ -3,19 +3,14 @@
 Help:
 :help:
     [[wiki_help|Wiki help]]
-    [[wiki_help/wiki_hotkeys|Wiki hotkeys]]
+    [[wiki_help#Hotkeys|Wiki hotkeys]]
     [[scratch#my-macroses|Мои макросы]]
 
-[[TODO]]
+[[self/TODO|TODO]]
 [[scratch]]
 
  == Manuals ==
 * [[bash/bash_manual]]
-
-=== Programming ===
-* [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
-* [[programming/python/python|Python]]:
-    * [[programming/python/pyinstaller|pyinstaller]]
 
 === Git ===
 * [[git/git#Git|git]]
@@ -24,6 +19,11 @@ Help:
 === File managers ===
 * [[file_managers/vifm|vifm]]
 * [[file_managers/ranger|ranger]]
+
+=== Programming ===
+* [[programming/howto_it_project_start#С чего начинать IT проект|С чего начинать IT проект]]
+* [[programming/python/python|Python]]:
+    * [[programming/python/pyinstaller|pyinstaller]]
 
 === Text editors ===
 * [[text_editors/vim/vim|vim]]
@@ -45,5 +45,6 @@ Help:
 
 == Self ==
 * [[diary/diary|diary]]
-* [[diary/ideas/ideas|Идеи]]
-* [[diary/passwords|My passwords]]
+* [[self/ideas/ideas|Идеи]]
+* [[self/plans|Планы]]
+* [[self/passwords|My passwords]]
