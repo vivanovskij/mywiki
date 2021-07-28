@@ -3,5 +3,30 @@
 
 [[vim_pluggins_notes|notes]]
 
-* [[vim_pluggins_install|Установка плагинов]]
+* [[vim_pluggins_install|Установка плагинов vim-plug]]
 * [[vim_xkbswitch|xkb-switch]]
+
+
+
+== Плагины для работы с python ==
+Plug 'tpope/vim-sensible'
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-buftabline'
+Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'jiangmiao/auto-pairs'
+Plug 'dense-analysis/ale'
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'lepture/vim-jinja'
+Plug 'pangloss/vim-javascript'
+Plug 'alvan/vim-closetag'
+Plug 'maxmellon/vim-jsx-pretty'
+
+
+Установить:
+* [ ] Plug 'preservim/nerdtree'
+* [ ] Plug 'jistr/vim-nerdtree-tabs'
+* [ ] 

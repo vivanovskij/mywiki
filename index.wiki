@@ -4,13 +4,13 @@ Help:
 :help:
     [[wiki_help|Wiki help]]
     [[wiki_help#Hotkeys|Wiki hotkeys]]
-    [[scratch#my-macroses|Мои макросы]]
+    [[text_editors/vim/vim_my_notes#my-macroses|Мои макросы]]
 
 [[self/TODO|TODO]]
 [[scratch]]
 
  == Manuals ==
-* [[bash/bash_manual]]
+* [[bash/bash_manual|bash]]
 
 === Git ===
 * [[git/git#Git|git]]
