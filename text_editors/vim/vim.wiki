@@ -2,8 +2,9 @@
 
 * [[vim_my_notes|notes]]
 * [[vim_pluggins]]
-
-
+* Статьи:
+    * [[vim_articles/vim_customization_and_configuration|Vim: Tutorial on Customization and Configuration]]
+    * [[vim_articles/vim_as_an_ide|Vim: Vim as an IDE]]
 
         == Содержание ==
 * [[#Основы|Основы]]
@@ -51,6 +52,11 @@
   
 
         == Основы ==
+
+Файл настройки: ~/.vimrc
+Можно редактировать файлы через сеть, например
+:e <scp|ftp|ftps>://user@host/path/to/the/file.txt
+:Ex или :e ./ - файловый менеджер
 
 hjkl                      перемещение в разные стороны
 w                         в начало следующего слова

@@ -1,0 +1,78 @@
+[[/index|Main]]
+[[/index#help|Help]]
+
+
+= Vim: Tutorial on Customization and Configuration =
+
+=== Initialization ===
+:h .vimrc
+
+First, initialize (if defined) the system vimrc (see :version)
+
+$VIM/vimrc
+
+Then, initialize the first found of the following user vimrc
+configurations:
+
+$VIMINIT
+$HOME/.vimrc
+$HOME/.vim/vimrc
+$EXINIT
+$HOME/.exrc
+$VIMRUNTIME/defaults/.vim
+
+=== Plugin / Package Scripts ===
+:h load-plugins
+
+First, plugin scripts are loaded, which is equivalent to running
+    :runtime! plugin/**/*.vim
+Usually, this is $HOME/.vim/plugin/**/*.vim
+
+Then packages are loaded...
+
+Usually, this is $HOME/.vim/pach/foo/start/bar/plugin/**/*.vim
+
+
+=== Runtimepath ===
+:h runtimepath
+runtimepath - a list of directories which will be searched for runtime files
+
+You'll usually only add to 1. and 5., but will often examine 3. (system runtime)
+Search order:
+1. User Home .vim
+2. Sysadmin folder
+3. $VIMRUNTIME
+4. Sysadmin "after" folder
+5. User Home "after" folder
+
+Each of the runtimepath directories (default 5) has this dir structure:
+* syntax/
+* compiler/
+* ftdetect/
+* filetype.vim
+* scripts.vim
+* autoload/
+* ftplugin/
+* plugin/
+* pack/
+* colors/
+* doc/
+* import/
+* keymap/
+* lang/
+* menu.vim
+* print/
+* spell/
+* tutor
+* indent/
+
+$ :set rtp?
+"=&rtp (скопировать runtimepath в буфер)
+
+==== syntax/ ====
+Enable customizing syntax highlighting
+When inviking :set syntax=xxx, syntax file(s) named xxx.vim are sourced from
+the runtimepath. Usually, an autocommand does this if filetype can be
+inferred.
+
+

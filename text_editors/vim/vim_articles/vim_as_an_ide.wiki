@@ -1,0 +1,196 @@
+[[/index|Main]]
+[[/index#help|Help]]
+
+= Vim: As an IDE =
+
+$ vim -Nu NORC file         Запуск vim без настроек 
+
+:set filetype?              Узнать тип файла
+:filetype plugin indent on  включить определение типа файлов
+:filetype detect            определить файл
+:syntax on                  включить подсветку синтакса
+:set backspace=start,eol,indent включить поддержку backspace
+:set hidden                 менять буфер без сохранения изменений
+
+
+1. ~/.vim/vimrc
+---------------
+
+filetype plugin indent on
+syntax on
+set backspace=start,eol,indent
+set hidden
+set noswapfile
+
+"определить runtimepath ($HOME/.vim)
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="$HOME/.vim/vimrc"
+
+
+$ source %      перечитать настройки
+$ so %          перечитать настройки
+
+
+2. Fix formatting
+-----------------
+
+Python example (following PEP8 standarts):
+* 4 spaces per indentation level
+* Limit lines to a maximum of 79 characters
+
+:set list       показать спец. символы
+:set list!      убрать спец. символы
+q:              показать последние команды
+:retab          расставить табы
+:setlocal colorcolumn=80    показывать ограничение 80 символов
+:set filetype?  посмотреть тип файла
+
+$HOME/.vim/after/ftplugin/python.vim:
+------------------------------------
+set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+set autoindent smartindent
+set colorcolumn=80
+
+3. Fix your path
+----------------
+
+Make sure your current directory (:pwd) is your project root. Figure out what
+parts of the project will be frequently explored. Add those to your :path
+For browsing outside your main project context, make use of :lcd and :setlocal path
+
+$HOME/.vim/vimrc:
+-----------------
+set path=.,**
+
+$HOME/.vim/after/ftplugin/python.vim:
+-------------------------------------
+setlocal path=src/**,tests,bin/**
+setlocal wildignore=*/__pycache__/*,*.pyc
+
+4. Setup include-search
+-----------------------
+
+include-search is very powerful, and defines commands adn patterns that allow
+for instantly locating symbol definitions (like bunctions, variables and
+macros).
+
+Try playing around with setting the two pattern options:
+* include
+    * Used to identify which files should be traversed for searching of relevant
+      symbols
+* define
+    * Finds macro definitions (works in tandem with include)
+
+:set suffixesadd?
+:set includeexpr?
+:ij                 include search jump
+:checkpath!         проверить пути по которым будет искать include search
+
+RegEx для include:
+/^\s*\(from\|import\)\s*\zs\(\S\+\s\{-}\)*\ze\($\| as\)
+
+$HOME/.vim/after/ftplugin/python.vim:
+-------------------------------------
+set include=^\\s*\\(from\\\|import\\)\\s*\\zs\\(\\S\\+\\s\\{-}\\)*\\ze\\($\\\| as\\)
+
+
+" Пример приведения импортов для работы include
+" import conv.metrics (1)
+" /conv.metrics/
+" conv/metrics.py
+" from conv import conversion as conv (2)
+" /conv import conversion/
+" conv/conversion.py conv.py
+
+function! PyInclude(fname)
+    let parts = split(a:fname, ' import ') "(1) [conv.metrics] (2) [conv, conversion]
+    let left_part = parts[0] " (1) conv.metrics (2) conv
+    if len(parts) > 1
+        let right_part = parts[1] " conversion
+        let joined = join([left_part, right_part], '.') "conv.conversion
+        let filepath = substitute(joined, '\.', '/', 'g') . '.py' "conv/conversion.py
+        let found = glob(filepath, 1)
+        if len(found)
+            return found
+        endif
+    endif
+    return substitute(left, '\.', '/', 'g') . '.py'
+endfunction
+
+setlocal includeexpr=PyInclude(v:fname)
+setlocal define=^\\s*\\<\\(def\\\|class\\)\\>
+
+Затем открыв файл *.py
+:filetype detect | checkpath!
+
+Для поиска
+:ij {serch_definition}
+<C-]> <C-[> перемещение по найденным файлам
+<C-w><C-i>  открыть {search_definition} под курсором в новом окне
+
+:dj {serch_definition}
+
+
+5. Setup tags
+-------------
+
+When include-search fails, tags are the best fallback option to use. All it
+requires is creating a tags file for your project and keeping in sync after
+making changes.
+
+Установить тэги в корне проекта:
+:! ctags -R
+
+Для поиска
+:tj {serch_definition}      поиск
+:ptj {serch_definition}     preview файла
+:ptp                        предыдущий тэг
+:ptn                        следующий тэг
+
+Создать tags list для навигации вперёд/назад:
+:tags
+
+<C-t>   вперед по тегам
+:ta     назад по тегам
+
+
+6. Add compiler support
+-----------------------
+
+Integrate a compiler with vim's makeprg and errorformat for seamless
+compile-and-edit workflows.
+
+:vert term      открыть терминал слева (вертикальный сплит)
+:bot term       открыть терминал внизу (горизонтальный сплит)
+
+Пример компиляторя на go:
+$HOME/.vim/compiler/go.vim:
+---------------------------
+let current_compiler = 'go'
+CompilerSet makeprg=go\ build\ ./..
+CompilerSet errorformat=%E%f:%l%c:%m
+
+Запуск компилятора:
+:compiler go
+:make
+
+$HOME/.vim/after/ftplugin/go.vim:
+---------------------------------
+compiler go
+nnoremap <buffer> <space> :silent make <bar> redraw!<CR>
+
+
+7. Make config portable
+-----------------------
+
+Leverage GNU Stow - push your dotfiles to a Github repo and use stow for
+distribution.
+
+:term
+$ mkdir -p ~/configs/vim
+$ cd ~/configs/vim
+$ cp -r ~/.vim .
+$ rm -rf ~/.vim
+$ stow vim
+
+
