@@ -11,9 +11,12 @@ Help:
 
  == Manuals ==
 * [[bash/bash_manual|bash]]
+* [[tmux]]
+* [[htop]]
 
 === Git ===
 * [[git/git#Git|git]]
+* [[git/git#Gitignore|.gitignore]]
 * [[git/git#Github|github]]
 
 === File managers ===

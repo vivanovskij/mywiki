@@ -1,6 +1,6 @@
 [[/index|Main]]
 [[/index#help|Help]]
-[[http://vim.fisadev.com|Vim as an IDE]]
+[[http://vim.fisadev.com|Vim as a Python IDE]]
 
 = Vim: As an IDE =
 From video: https://www.youtube.com/watch?v=Gs1VDYnS-Ac

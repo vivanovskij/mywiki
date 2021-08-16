@@ -1,0 +1,20 @@
+[[/index|Main]]
+[[/index#help|Help]]
+
+= HTOP =
+
+Управление процессами
+
+Установка:
+$ sudo pacman -S htop
+
+Поиск:
+/{process}
+
+Фильтр:
+\{process}
+
+u{user}
+
+Послать сигнал:
+k{signal}

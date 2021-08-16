@@ -2,6 +2,7 @@
 
 * [[vim_my_notes|notes]]
 * [[vim_pluggins]]
+ 
 * Статьи:
     * [[vim_articles/vim_customization_and_configuration|Vim: Tutorial on Customization and Configuration]]
     * [[vim_articles/vim_as_an_ide|Vim: Vim as an IDE]]

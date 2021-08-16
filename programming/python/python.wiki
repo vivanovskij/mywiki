@@ -3,5 +3,12 @@
 
 
 = Python =
+* [[Django]]
 * [[12_onelines_in_python|12 мощных однострочников Python]]
+* [[howto_passwords_keep|Как хранить пароли]]
 * [[pyinstaller]]
+
+----------------------------------------------------------------------
+Установка requirenments.txt:
+
+$ pip install -r requirenments.txt
